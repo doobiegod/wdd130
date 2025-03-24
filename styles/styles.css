@@ -91,7 +91,7 @@ footer {
   text-align: center;
 }
 
-/*--ClassSelectors--*/
+/*ClassSelectors*/
 .box {
   padding: var(--padding);
   margin: 1rem;
