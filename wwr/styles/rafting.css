@@ -27,13 +27,13 @@ nav {
 nav img{
     float: left;
 }
-#hero {
+.hero {
     margin: 1rem 0 0;
     position: relative;
     color: var(--secondary-color);
 }
 
-#hero h1 {
+.hero h1 {
     position: absolute;
     color: var(--primary-color);
     top: 20px;
@@ -49,7 +49,7 @@ nav img{
     height: auto;
     object-fit: cover;
 }
-#hero article {
+.hero article {
     padding: var(--padding);
     position: absolute;
     top: 45%;
@@ -59,7 +59,7 @@ nav img{
     left: 50%;
     transform: translateX(-50%);
 }
-#hero article img {
+.hero article img {
     float: right;
     width: 80px;
     max-height: 80px;
