@@ -35,7 +35,7 @@ nav img{
 
 #hero h1 {
     position: absolute;
-    color: var(var(--primary-color));
+    color: var(--primary-color);
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
