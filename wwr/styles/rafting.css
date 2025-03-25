@@ -44,7 +44,7 @@ nav img{
     margin: 0;
     width: max-content;
 }
-#hero .hero-img {
+.hero-img {
     width: 100%;
     height: auto;
     object-fit: cover;
