@@ -125,8 +125,8 @@ footer div{
     gap: 1rem;
     font-size: 2rem;
 }
-footer div i {
-    cursor: pointer;
+footer div img {
+    width: 26px;
 }
 /*Class Selector*/
 .history-box {
