@@ -1,0 +1,22 @@
+/*--- my color palette: https://coolors.co/ffffff-c6e5e7-c1e7ec-1fc7ff-003249---*/
+/*--- primary-color: FFFFFF */
+/*--- secondary-color: a */
+/*--- accent1-color: 1FC7FF */
+/*--- accent2-color: 003249 */
+
+/*--- heading-font: */
+/*--- text-font: */
+
+h1, h2{
+    font-family: " ", cursive;
+    font-weight: 400;
+    font-size: 60px;
+    font-style: normal;
+  }
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }

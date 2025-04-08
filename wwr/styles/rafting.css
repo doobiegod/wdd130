@@ -1,0 +1,259 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #c1e7ec;
+  --accent1: #1fc7ff;
+  --accent2: #003249;
+  --padding: 1rem;
+  --heading: waterfall, Arial, sans-serif;
+  --border: 1px solid rgba(0, 0, 0, 0.2);
+  --side-padding: 4rem
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    background-color: var(--secondary-color);
+
+}
+header{
+    padding: var(--padding);
+    display: grid;
+    justify-content: space-around;
+    align-items: center;
+    grid-template-columns: 100px 500px;
+    background-color: var(--primary-color);
+}
+nav {
+    display: flex;
+    gap: 4rem;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: #003249;
+}
+.hero {
+    margin: 1rem 0 0;
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    color: var(--primary-color);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--heading);
+    font-size: 100px;
+    margin: 0;
+    width: max-content;
+}
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.hero article {
+    width: 90%;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--accent2);
+}
+.hero article img {
+    float: right;
+    width: 80px;
+    max-height: 80px;
+    object-fit: cover;
+    object-position: top;
+    height: auto;
+    margin: 0 0 0 10px;
+    opacity: 1;
+}
+h2 {
+    text-align: center;
+    margin: 0 0 1REM;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+section {
+    border: var(--border);
+    padding: 2rem;
+    background-color: var(--primary-color);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+}
+
+figcaption{
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: var(--padding);
+    padding-left: var(--side-padding);
+    padding-right: var(--side-padding);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    color: #000;
+}
+footer p{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+}
+footer div{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: flex;
+    justify-content: right;
+    gap: 1rem;
+    font-size: 2rem;
+}
+footer div img {
+    width: 26px;
+}
+/*Class Selector*/
+.history-box {
+    margin: 1rem 0 1.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+}
+.history-box h2 {
+    grid-column: 1/4;
+}
+.history-box img {
+    justify-self: center;
+}
+.adventure-box {
+    margin: 0 0 1.4rem 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.adventure-box h2 {
+    grid-column: 1/6;
+}
+
+
+/*--------------------------------------------------CONTACT US PAGE CSS------------------------------------------*/
+.contactus-hero {
+    margin-top: 30px;
+    position: relative;
+    height: 264px;
+    overflow: hidden;
+}
+.contactus-hero h1 {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    font-size: 60px;
+    color: var(--accent2);
+}
+.contactus-hero img {
+    width: 100%;
+    opacity: .3;
+}
+.company-information {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    color: var(--accent2);
+}
+.company-information section {
+    flex-basis: 100%;
+    height: 380px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.company-information .map{
+    padding: 0;
+    border: 0;
+}
+.company-information .map iframe{
+    width: 100%;
+    height: 100%;
+}
+.company-information section h2{
+    text-align: left;
+}
+.teams{
+    color: #fff;
+    border: var(--border);
+    background-color: var(--accent2);
+    padding: 120px 80px 80px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+}
+.teams h2{
+    position: absolute;
+    top: 40px;
+
+}
+.teams figure{
+    width: max-content;
+}
+
+#contact-form {
+    width: 500px;
+    border: var(--border);
+    margin: 30px auto;
+    padding: 30px;
+    color: var(--accent2);
+    background-color: var(--primary-color);
+    font-size: 18px;
+}
+#contact-form input{
+    font-size: 18px;
+}
+#contact-form #username,
+#contact-form #email{
+    width: 300px;
+    padding: 3px 4px;
+}
+#contact-form #username {
+    margin-bottom: 10px;
+}
+#contact-form p{
+    margin-top: 20px;
+    font-weight: 700;
+}
+#contact-form #newsletter{
+    margin-top: 20px;
+}
+
+#contact-form button{
+    background-color: var(--accent2);
+    border: none;
+    color: var(--primary-color);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 20px;
+}

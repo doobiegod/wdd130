@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 1px solid #000;
+            padding: 1rem;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 1rem;
+        }
+
+        thead, tr:nth-child(even) {
+            background-color: gray;
+        }
+
+        thead{
+            color: #fff;
+            background-color: #000;
+        }
+
+        caption {
+            caption-side: bottom;
+            font-size: 1.2rem;
+            font-style: italic;
+            font-weight: 600;
+            padding: 1rem;
+        }
+    </style>
+
+    <table>
+        <caption>
+            Front-end web devlopment course
+        </caption>
+        <thead>
+            <tr>
+                <th>Department</th>
+                <th>Person</th>
+                <th>Most intersted in</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Accounting</th>
+                <th>Chris</th>
+                <td>HTML tables</td>
+                <td>22</td>
+            </tr>
+            <tr>
+                <th>Dennis</th>
+                <td>Web accessibility</td>
+                <td>45</td>
+            </tr>
+            <tr>
+                <th>Sarah</th>
+                <td>JavaScript framework</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <th>Karen</th>
+                <td>Web performance</td>
+                <td>36</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th colspan="3">Average age</th>
+                <td>33</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">ID</th>
+                <th colspan="2">Member Date</th>
+                <th rowspan="2">Balance</th>
+            </tr>
+            <tr>
+                <th>Joined</th>
+                <th>Canceled</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Godwin</td>
+                <td>45422</td>
+                <td>15-05-2011</td>
+                <td>N/A</td>
+                <td>$504,000.00</td>
+            </tr>
+            <tr>
+                <td>Mark</td>
+                <td>44344</td>
+                <td>3-06-2012</td>
+                <td>N/A</td>
+                <td>$60,900.00</td>
+            </tr>
+            <tr>
+                <td>Chidi</td>
+                <td>23453</td>
+                <td>06-02-2012</td>
+                <td>N/A</td>
+                <td>$10,000.00</td>
+            </tr>
+            <tr>
+                <td>Makana</td>
+                <td>43455</td>
+                <td>02-09-2018</td>
+                <td>N/A</td>
+                <td>$259,050.00</td>
+            </tr>
+            <tr>
+                <td>Linda</td>
+                <td>34509</td>
+                <td>09-10-2023</td>
+                <td>N/A</td>
+                <td>$300,000.00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" style="text-align: left;">Total Balance</th>
+                <td>$1,133,950.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <table>
+        <tr>
+            <th>Player</th>
+            <th>Gloobes</th>
+            <th>Zataak</th>
+        </tr>
+        <tr>
+            <th>TR-7</th>
+            <td>7</td>
+            <td>4,575</td>
+        </tr>
+        <tr>
+            <th>TR-7</th>
+            <td>7</td>
+            <td>4,575</td>
+        </tr>
+        <tr>
+            <th>TR-7</th>
+            <td>7</td>
+            <td>4,575</td>
+        </tr>
+    </table>
+</body>
+</html>
